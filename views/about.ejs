@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbiosis Lab Team</title>
+</head>
+<body>
+    <!-- <h1>Hello this is me </h1> -->
+    <section class="sec">
+        <header>
+            <a href="#"><img src="/images/logo.jpg" class="logo" alt=""></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="/">Home</a></li>
+                <li><a href="/whatsnew">What's New</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="#">Reach Us</a></li>
+            </ul>
+        </header>
+
+         <div class="slider">
+            <div class="card">
+                <div class="img"><img src="/images/memb.jpg" alt=""> 
+                    <div class="content">
+                        <div class="title">Saransh Lingwal</div>
+                        <div class="sub-title">Web Developer</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere nihil vero, cum,
+                            necessitatibus hic excepturi reiciendis accusamus totam non accusantium? Dolorum praesentium sit
+                            autem cumque delectus iste, similique laborum!</p>
+                        <div class="btn">
+                            <button onclick="window.location.href = 'https://github.com/Sarlin-7757';">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="/images/memc.jpg" alt="">
+                    <div class="content">
+                        <div class="title">Aditya Narayan</div>
+                        <div class="sub-title">Data Analyst </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere nihil vero, cum,
+                            necessitatibus hic excepturi reiciendis accusamus totam non accusantium? Dolorum praesentium sit
+                            autem cumque delectus iste, similique laborum!</p>
+                        <div class="btn">
+                            <button onclick="window.location.href = '';">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="/images/mema.jpg" alt="">
+                    <div class="content">
+                        <div class="title">Dr. Manoj Kumar</div>
+                        <div class="sub-title">Professor</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere nihil vero, cum,
+                            necessitatibus hic excepturi reiciendis accusamus totam non accusantium? Dolorum praesentium sit
+                            autem cumque delectus iste, similique laborum!</p>
+                        <div class="btn">
+                            <button onclick="window.location.href ='';">Read More</button>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="/images/memd.jpg" alt="">
+                    <div class="content">
+                        <div class="title">Bhavya Dang</div>
+                        <div class="sub-title">Backend-Developer</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facere nihil vero, cum,
+                            necessitatibus hic excepturi reiciendis accusamus totam non accusantium? Dolorum praesentium sit
+                            autem cumque delectus iste, similique laborum!</p>
+                        <div class="btn">
+                            <button onclick="window.location.href= '';">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+</body>
+<script>
+    function menuToggle() {
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+</script>
+</html>
