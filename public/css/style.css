@@ -254,7 +254,7 @@ header ul li a:hover {
     
 }
 
-.sci{
+.socials{
     position: absolute;
     top: 50%;
     right: 30px;
@@ -265,11 +265,11 @@ header ul li a:hover {
     flex-direction: column;
 }
 
-.sci li{
+.socials li{
     list-style: none;
 }
 
-.sci li a{
+.socials li a{
     display: inline-block;
     filter: invert(1);
     margin: 5px 0;
@@ -433,7 +433,7 @@ header ul li a:hover {
     .work-section.works img {
         max-width: 348px;
     } 
-    .sci{
+    .socials{
         position: absolute;
         top: 55%;
         right: 0;
