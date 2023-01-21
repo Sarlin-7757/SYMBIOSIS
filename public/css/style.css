@@ -195,7 +195,7 @@ header ul li a:hover {
 
 
 .slider .content{
-    background: rgb(243, 240, 243);
+    background: #CEC2EB;
     flex: 1;
     margin: 0 10px;
 }
@@ -223,7 +223,7 @@ header ul li a:hover {
 .card .content .sub-title{
     font-size: 20px;
     font-weight: 600;
-    color: #b6716a;
+    color: #605d5d;
     line-height: 20px;
 }
 
@@ -239,8 +239,8 @@ header ul li a:hover {
 }
 
 .card .content .btn button{
-    background:#5c2f2c;
-    color: #fff;
+    background:#B19CD7;
+    color: rgb(65, 62, 62);
     border: none;
     outline:none;
     font-size: 17px;
@@ -252,6 +252,29 @@ header ul li a:hover {
 .card .content .btn button:hover{
     transform: scale(0.9);
     
+}
+
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    filter: invert(1);
+    margin: 5px 0;
+    transform: scale(0.6);
+    /* color: #fff; */
 }
 
 
@@ -410,9 +433,21 @@ header ul li a:hover {
     .work-section.works img {
         max-width: 348px;
     } 
-
+    .sci{
+        position: absolute;
+        top: 55%;
+        right: 0;
+        width:50px;
+        background: rgba(0,0,0,0.2);
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
 }
+
 /* @media(min-width:700px) and (max-width:822px){
     
     /* .content{
