@@ -20,6 +20,11 @@ app.get("/whatsnew",function(req,res){
     res.render("whatsnew")
 });
 
+app.get("/reachus",function(req,res){
+    res.render("reachus")
+});
+
+
 app.listen(3000 , function(){
     console.log("your server is running on port 3000");
 
