@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins&family=Rubik&family=Rubik+Mono+One&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    /* font-family: 'Fjalla One', sans-serif; */
     box-sizing: border-box;
 }
 
@@ -16,8 +18,13 @@ section {
     justify-content: space-between;
     align-content: center;
     /* background: #dcdce3; */
-    background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
+    /* background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%); */
+    background: rgb(248, 246, 246);
     transition: 0.5s;
+}
+
+#sec-two{
+    background:#131313;
 }
 
 header {
@@ -36,7 +43,18 @@ header .logo {
     position: relative;
     max-width: 80px;
     border-radius: 56px;
+    box-shadow: 10px 5px 5px rgb(148, 147, 147);
+    transition: 0.5s;
 }
+
+header .logo:hover {
+    position: relative;
+    max-width: 80px;
+    border-radius: 56px;
+    box-shadow: 10px 5px 5px rgb(148, 147, 147);
+    transform: translate(-2px);
+}
+
 
 header ul {
     position: relative;
@@ -49,14 +67,15 @@ header ul li {
 
 header ul li a {
     display: inline-block;
-    color: #fff;
-    font-weight: 400;
+    color: rgb(24, 23, 23);
+    font-weight: 700;
     margin-left: 40px;
     text-decoration: none;
 }
 
 header ul li a:hover {
-    color: rgb(231, 203, 166)
+    color: rgb(30, 50, 230);
+    text-decoration:underline;
 }
 
 .lab-section {
@@ -74,10 +93,12 @@ header ul li a:hover {
     max-width: 600px;
     justify-content: flex-end;
     padding: 10px;
+    margin-left: 10px;
 }
 
 .lab-section .labcontent h2 {
-    color: #fff;
+    font-family: 'Fjalla One', sans-serif;
+    color: rgb(24, 24, 24);
     font-size: 4em;
     font-weight: 900;
     text-transform: uppercase;
@@ -87,21 +108,27 @@ header ul li a:hover {
 }
 
 .lab-section .labcontent p {
-    color: #fff;
+    color: rgb(78, 76, 76);
     margin: 10px;
+    line-height: 30px;
 }
 
 .lab-section .labcontent .button {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #fff;
+    background: rgb(250, 246, 246);
     color: #111;
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.lab-section .labcontent .button:hover{
+    transform: translateY(-10px);
 }
 
 
@@ -119,7 +146,14 @@ header ul li a:hover {
     width: 460px;
     /* height: 350px; */
     border-radius: 20px;
+    transition: 0.5s;
 
+}
+
+.lab-section .labs img:hover{
+    /* width: 300px; */
+    transform: translate(10px);
+    box-shadow: 10px 5px 5px #3a3a3a;
 }
 
 
@@ -138,42 +172,63 @@ header ul li a:hover {
     width: 451px;
     height: 337px;
     border-radius: 20px;
+    margin-left: 40px;
+    transition: 0.5s;
 
+}
+
+.work-section .works img:hover{
+    transform: translate(20px);
 }
 
 .work-section .workcontent {
     position: relative;
     max-width: 600px;
     justify-content: flex-end;
+    margin-left: 10px;
     padding: 10px;
+
     /* bottom: 64px; */
 }
 .work-section .workcontent h2 {
-    color: #fff;
+    color: rgb(255, 255, 255);
+    font-family: 'Fjalla One', sans-serif;
     font-size: 4em;
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1.5em;
     margin: 6px;
-
+    /* transition: all 0.5s; */
+    
+}
+.work-section .workcontent h2:hover{
+    text-decoration: underline;
+    transition: all 0.5s;
+    
 }
 
 .work-section .workcontent p {
-    color: #fff;
+    color: rgb(126, 126, 126);
     margin: 10px;
+    line-height: 30px;
 }
 
 .work-section .workcontent .button {
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #fff;
-    color: #111;
+    background: rgb(171, 169, 169);
+    color: rgb(255, 255, 255);
     border-radius: 40px;
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.work-section .workcontent .button:hover{
+    transform: translateY(-10px);
 }
 
  html,body{
@@ -186,6 +241,7 @@ header ul li a:hover {
     background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
 } 
 .slider{
+    /* box-shadow: 10px 5px 5px rgb(45, 44, 44); */
     /* max-width: 1150px; */
     /* overflow: hidden; */
     display: flex;
@@ -195,17 +251,27 @@ header ul li a:hover {
 
 
 .slider .content{
-    background: #CEC2EB;
+    border-radius: 0 0 10px 10px;
+    background: #b8b6b6;
     flex: 1;
     margin: 0 10px;
 }
+.slider .card{
+    transition: 0.5s;
+}
+.slider .card:hover{
+    transform: translateY(-10px);
+} 
 
 .slider .card .img{
+    /* border-radius: 10px; */
     height:200px;
     width: 100%;
 }
 
 .slider .card .img img{
+    /* border-radius: 10px; */
+    border-color: #131313;
     height:100%;
     width: 92.5%;
     object-fit: cover;
@@ -239,8 +305,8 @@ header ul li a:hover {
 }
 
 .card .content .btn button{
-    background:#B19CD7;
-    color: rgb(65, 62, 62);
+    background:#3a3a3b;
+    color: rgb(242, 239, 239);
     border: none;
     outline:none;
     font-size: 17px;
@@ -271,12 +337,22 @@ header ul li a:hover {
 
 .socials li a{
     display: inline-block;
-    filter: invert(1);
+    /* filter: invert(1); */
     margin: 5px 0;
     transform: scale(0.6);
+    /* position:fixed; */
     /* color: #fff; */
 }
-
+.socials li a:hover{
+    display: inline-block;
+    /* filter: invert(1); */
+    /* filter: ; */
+    filter: invert(10%) sepia(90%) saturate(5268%) hue-rotate(245deg) brightness(109%) contrast(155%);
+    margin: 5px 0;
+    transform: scale(0.6);
+    /* color: blue; */
+    /* color: #fff; */
+}
 
 
 @media (max-width:991px) {
@@ -299,8 +375,8 @@ header ul li a:hover {
         left: 0;
         width: 100%;
         height: 100%;
-        /* background: #111; */
-        background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
+        background:#fff;
+        /* background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%); */
         z-index: 1;
         flex-direction: column;
         align-items: center;
@@ -312,7 +388,7 @@ header ul li a:hover {
 
     header ul li a {
         display: inline-block;
-        color: #fff;
+        color: #131313;
         font-weight: 400;
         margin-left: 0;
         text-decoration: none;
@@ -321,7 +397,9 @@ header ul li a:hover {
     }
 
     header ul li a:hover {
-        color: rgb(227, 187, 187);
+        /* color: rgb(70, 31, 227); */
+        
+        text-decoration: underline;
     }
 
     header ul.active {
@@ -353,23 +431,24 @@ header ul li a:hover {
         background-size: 30px;
         background-repeat: no-repeat;
         z-index: 2;
+        filter: invert(1);
         cursor: pointer;
     }
 
     .toggleMenu .active {
-        background: url(/images/close.png);
+        background: url(/images/menu.png);
         /* width: 40px;
         height: 40px; */
         background-position: center;
         background-size: 25px;
         background-repeat: no-repeat;
-        filter: invert(1);
+        filter: invert(0);
 
     }
 
     .lab-section {
         flex-direction: column;
-        margin-top: 120px;
+        margin-top: 30px;
     }
 
     .lab-section.labcontent {
@@ -403,7 +482,8 @@ header ul li a:hover {
 
       .work-section {
         flex-direction: column;
-        margin-top: 120px; 
+        /* margin-top: 120px;  */
+        margin-top: 35px;
     }
 
      .work-section.workcontent {
@@ -438,13 +518,14 @@ header ul li a:hover {
         top: 55%;
         right: 0;
         width:50px;
-        background: rgba(0,0,0,0.2);
+        background: rgba(0,0,0,0.1);
         transform: translateY(-50%);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
 
 }
 
@@ -465,7 +546,7 @@ header ul li a:hover {
         max-width: 326px ;
         position: relative;
         bottom:40px;
-        max-height: 240px;
+        max-height: 250px;
     }
     .slider{
         max-width: 900px;
