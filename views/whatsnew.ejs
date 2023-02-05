@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whats New</title>
 </head>
-<body>
+<body id="home">
     <!-- <h1>This is some thing new </h1> -->
     <section class="sec">
         <header>
             <a href="#"><img src="/images/logo.jpg" class="logo" alt=""></a>
             <div class="toggleMenu" onclick="menuToggle();"></div>
             <ul class="navigation">
-                <li><a href="/">Home</a></li>
+                <li><a data.active="home" href="/">Home</a></li>
                 <li><a href="/whatsnew">What's New</a></li>
-                <li><a href="/about">Web Team</a></li>
+                <li><a href="/about2">Web Team</a></li>
                 <li><a href="/reachus">About Us</a></li>
             </ul>
         </header>
@@ -29,5 +29,13 @@
         toggleMenu.classList.toggle('active');
         navigation.classList.toggle('active');
     }
+     let links = document.querySelectorAll(".navigation li a");
+        let bodyId = document.querySelector("body").id;
+
+        for(let link of links){
+            if(link.dataset.active === bodyId){
+                link.classList.add("active");
+            }
+        }
 </script>
 </html>

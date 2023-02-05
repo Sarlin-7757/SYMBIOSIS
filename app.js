@@ -12,8 +12,8 @@ app.get("/" , function(req,res){
     res.render("home");
 });
 
-app.get("/about",function(req ,res){
-    res.render("about");
+app.get("/about2",function(req ,res){
+    res.render("about2");
 });
 
 app.get("/whatsnew",function(req,res){

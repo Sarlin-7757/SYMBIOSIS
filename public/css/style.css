@@ -1,6 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins&family=Rubik&family=Rubik+Mono+One&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato&family=Montserrat:wght@600&family=Poppins&family=Rubik&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato&family=Lora&family=Montserrat:wght@600&family=Open+Sans&family=Poppins&family=Rubik&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Fjalla+One&family=Lato&family=Lora&family=Montserrat:wght@600&family=Open+Sans&family=Poppins&family=Rubik&family=Rubik+Mono+One&display=swap');
 
 * {
     margin: 0;
@@ -72,11 +74,41 @@ header ul li a {
     font-weight: 700;
     margin-left: 40px;
     text-decoration: none;
+    transition: all 0.3s;
 }
 
-header ul li a:hover {
+header ul li a:hover
+{
     color: rgb(30, 50, 230);
     text-decoration:underline;
+}
+
+.slide-left{
+    animation:slideleft 1s linear forwards;
+}
+
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+.slide-up{
+    animation:slideup 1s linear forwards;
+}
+@keyframes slideup{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .lab-section {
@@ -98,7 +130,9 @@ header ul li a:hover {
 }
 
 .lab-section .labcontent h2 {
-    font-family: 'Fjalla One', sans-serif;
+    /* font-family: 'Fjalla One', sans-serif; */
+    /* font-family: 'Open Sans'; */
+    font-family: 'Dosis';
     color: rgb(24, 24, 24);
     font-size: 4em;
     font-weight: 900;
@@ -109,9 +143,9 @@ header ul li a:hover {
 
 }
 
-.lab-section .labcontent h2:hover{
+/* .lab-section .labcontent h2:hover{
     text-decoration: underline;
-}
+} */
 
 .lab-section .labcontent p {
     color: rgb(78, 76, 76);
@@ -142,6 +176,8 @@ header ul li a:hover {
 
 .lab-section .labs {
     width: 500px;
+    /* font-family: 'Fjalla One', sans-serif; */
+    font-family: 'Lora' , serif; 
     display: flex;
     padding-right: 30px;
     /* justify-content: flex-end; */
@@ -198,20 +234,23 @@ header ul li a:hover {
 }
 .work-section .workcontent h2 {
     color: rgb(255, 255, 255);
-    font-family: 'Fjalla One', sans-serif;
+    /* font-family: 'Fjalla One', sans-serif;` */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Dosis';
     font-size: 4em;
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1.5em;
     margin: 6px;
+    justify-content: center;
     /* transition: all 0.5s; */
     
 }
-.work-section .workcontent h2:hover{
+/* .work-section .workcontent h2:hover{
     text-decoration: underline;
     transition: all 0.5s;
     
-}
+} */
 
 .work-section .workcontent p {
     color: rgb(126, 126, 126);
@@ -259,6 +298,8 @@ header ul li a:hover {
     background-repeat: no-repeat;
     /* background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%); */
 } 
+
+/* _____________________________________________________________THIS CODE IS NOT USED______________________________________________________________________ */
 .slider{
     /* box-shadow: 10px 5px 5px rgb(45, 44, 44); */
     /* max-width: 1150px; */
@@ -338,6 +379,7 @@ header ul li a:hover {
     transform: scale(0.9);
     
 }
+/* ____________________________________________________________________THIS CODE IS NOT IN USE________________________________________________________________________________________*/
 
 .socials{
     position: absolute;
@@ -426,6 +468,10 @@ header ul li a:hover {
         opacity: 1;
     }
 
+
+
+    /* ________________________________________________________________________________________________________________-- */
+
     .slider{
         /* max-width: 900px; */
         padding-top: 100px;
@@ -440,6 +486,11 @@ header ul li a:hover {
     .content{
         margin-top: 5px;
     }
+
+________________________________________________________________________________________________________________________
+
+
+
 
     .toggleMenu {
         /* font-weight: 700; */
@@ -456,7 +507,7 @@ header ul li a:hover {
     }
 
     .toggleMenu .active {
-        background: url(/images/menu.png);
+        background: url(/images/close.png);
         /* width: 40px;
         height: 40px; */
         background-position: center;
@@ -568,11 +619,11 @@ header ul li a:hover {
         bottom:40px;
         max-height: 250px;
     }
-    .slider{
-        max-width: 900px;
-    }
-}
+    /* .slider{ */
+        /* max-width: 900px; */
+    /* } */
 
+}
 /* BLOG SECTION */
 
 #sec-three {
@@ -613,7 +664,7 @@ header ul li a:hover {
 
 
 
-.container {
+.container-blog{
     max-width: 85%;
     margin: 0 auto;
     height: 100%;
@@ -627,7 +678,7 @@ header ul li a:hover {
 }
 
 .blog-card {
-    overflow: hidden;
+    overflow:hidden;
     padding: 20px;
     background-color: #FFF;
     border-radius: 30px;
@@ -652,15 +703,18 @@ header ul li a:hover {
 }
 
 .card_title {
-    font-family: 'Merriweather',
-        serif;
+    /* font-family: 'Merriweather', */
+        /* serif; */
+    font-family: 'Open Sans';
     font-weight: 900;
     text-transform: capitalize;
     font-size: 26px;
-    padding-bottom: 20px;
-    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
-
+#card_title{
+    font-size: 15px;
+}
 .card_title:hover{
     text-decoration: underline;
 }
@@ -732,6 +786,20 @@ a.read_more:hover {
 .link:hover {
     text-decoration: underline;
     background-color: black;
+}
+
+.so_linK a{
+    padding: 10px;
+    color: #131313;
+    font-size: 25px;
+    padding: 20px;
+    transition: 1s;
+}
+
+.so_link a:hover{
+    font-size: 30px;
+    color: #383dc7;
+    padding: 12px;
 }
 
 @media only screen and (max-width: 1441px) and (min-width: 1025px) {

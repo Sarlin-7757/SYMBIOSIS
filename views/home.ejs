@@ -9,22 +9,22 @@
     <title>SYMBIOSIS</title>
 </head>
 
-<body>
+<body id="home">
     <section class="sec">
         
         <header>
             <a href="#"><img src="/images/logo.jpg" class="logo" alt=""></a>
             <div class="toggleMenu" onclick="menuToggle();"></div>
-            <ul class="navigation">
-                <li><a href="/">Home</a></li>
-                <li><a href="/whatsnew">What's New</a></li>
-                <li><a href="/about">Web Team</a></li>
-                <li><a href="/reachus">About Us</a></li>
+            <ul class="navigation" id="navig">
+                <li><a  href="/">Home</a></li>
+                <li><a  href="/whatsnew">What's New</a></li>
+                <li><a  href="/about2">Web Team</a></li>
+                <li><a  href="/reachus">About Us</a></li>
 
                 <!-- changed About us with web team and reach us wit about us  -->
             </ul>
         </header>
-        <div class="lab-section">
+        <div class="lab-section slide-left">
             <div class="labs">
                 <img src="/images/lab1.jpg" alt="">
             </div>
@@ -46,7 +46,7 @@
     </section>
 
     <section class="sec" id="sec-two">
-        <div class="work-section">
+        <div class="work-section slide-left">
             <div class="workcontent">
                 <h2>REPORTS</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus, quisquam nisi quibusdam quo
@@ -67,7 +67,7 @@
 <!-- blog section -->
 
 <section id="sec-three" > 
-    <div class="container-blog">
+    <div class="container">
         <div class="grid">
                 <div class="blog-card">
                     <div class="card_img">
@@ -118,13 +118,16 @@
 
 
     <script>
+       document.addEventListener("DOMContentLoaded", () => {
         function menuToggle() {
             const toggleMenu = document.querySelector('.toggleMenu');
             const navigation = document.querySelector('.navigation');
             toggleMenu.classList.toggle('active');
             navigation.classList.toggle('active');
-
-        }
+        };
+      
+       });
+    
     </script>
 </body>
 
